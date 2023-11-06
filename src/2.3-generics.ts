@@ -30,16 +30,20 @@
   const person: [string, number, boolean] = ["touhid", 24, true]; // normal tuple
 
   type GenericTuple<x, y, z> = [x, y, z];
+  type User = {
+    name: string;
+    email: string;
+  };
+
+  //  or
+
+  interface Users {
+    name: string;
+    email: string;
+  }
 
   const tuple1: GenericTuple<string, number, boolean> = ["touhid", 24, true];
-  const tuple2: GenericTuple<
-    number,
-    boolean,
-    {
-      name: string;
-      email: string;
-    }
-  > = [
+  const tuple2: GenericTuple<number, boolean, User> = [
     234,
     true,
     {
