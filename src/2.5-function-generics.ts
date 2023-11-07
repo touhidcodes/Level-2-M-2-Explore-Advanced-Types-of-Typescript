@@ -32,13 +32,13 @@
 
   const student1 = addCourseToStudent({
     name: "touhid",
-    email: "X@gmail.com"
+    email: "X@gmail.com",
     devType: "Next Level Developer"
   })
 
   const student2 = addCourseToStudent({
     name: "urmi",
-    email: "Y@gmail.com"
+    email: "Y@gmail.com",
    hasWatch: true
   })
   //
