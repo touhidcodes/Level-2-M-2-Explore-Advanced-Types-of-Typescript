@@ -1,5 +1,7 @@
 {
-  //
+  //Generic Constraints
+  //  Use extends keyword to constrain the type parameter to a specific type.
+
   const addCourseToStudent = <
     T extends { id: number; name: string; email: string }
   >(
